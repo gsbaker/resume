@@ -1,0 +1,87 @@
+%-----------------------------------------------------------------------------%
+% Letter class
+\documentclass[a4paper, 10pt]{letter}
+
+\usepackage{hyperref}
+\usepackage[top=0.75in,bottom=0.75in,left=1in,right=1in]{geometry} % Added for margin control
+
+
+% Name of sender
+\name{George Baker}
+
+% Signature of sender
+\signature{George Baker}
+
+% Address of sender
+\address
+{
+    Edinburgh, UK
+}
+
+%-----------------------------------------------------------------------------%
+
+\begin{document}
+
+% Name and address of receiver
+\begin{letter}{}
+
+% Opening statement
+\opening{Dear 37signals,}
+
+% Letter body
+
+My name is George and I am writing to apply for the position of Junior Rails Programmer.
+
+I've been working for around \emph{two and a half years} as a Rails Programmer at
+\href{https://www.freeagent.com}{FreeAgent}, an accountancy platform for small businesses in the UK.
+
+Here's some of the things I've worked on recently:
+\begin{itemize}
+\item Diagnosing a database deadlock issue on our invoicing API (caused by too many
+overlapping requests) and working with a more senior programmer to fix it
+\item Leading work to support a new GoCardless feature that automatically retries failed Direct Debit
+payments within FreeAgent's invoicing functionality
+\item Dynamically updating the "Matched transaction" status for a newly
+uploaded receipt using Turbo based polling
+\item Updating the contact field on our web forms to use an
+\emph{'autocomplete'} combobox
+field rather than a traditional HTML select (much easier to use, especially for customers
+with a large amount of contacts)
+
+\end{itemize}
+
+Although I've learnt a lot at FreeAgent, I don't think I've reached my ceiling
+there. I think I can become an excellent programmer, and I think 37signals has
+the right people to help make that happen. Sure, when I arrive, I'll
+probably make some mistakes that'll make the other programmers cringe, but I'm
+a very quick learner, and I put \emph{a lot} of effort into my work.
+
+I'm the kind of person that obsesses over writing clean, beautiful code, not
+someone who's satisfied with something that \emph{'just works'}.
+
+Furthermore, I think I'd be a good fit for 37signals since I'm used to working
+remotely, in fact, I find I'm much more productive doing so. 
+I'm also pretty self-sufficient at work; I like to just get on with things :).
+
+In addition to my professional work experience, I'm also working on a web
+application to help therapists collaborate with their clients:
+\href{https://reflet.io}{reflet.io}. I've been
+writing the application with Rails (source code
+\href{https://github.com/gsbaker/reflet}{here}), and I've been taking
+advantage of some of the newer tools, e.g., Kamal for deploying to
+a DigitalOcean droplet in the cloud. 
+
+A little about George the human: I live in beautiful Edinburgh, I drink a lot of early
+grey tea, and I enjoy running (although not when it's \emph{'chucking it down'} as we
+like to say).
+
+Thanks for reading my (non AI generated) cover letter! I'd be very happy to
+chat further, or answer any questions. If you think I'm not such a great fit,
+then I wish you all the best in finding the right candidate.
+
+% Closing statement
+\closing{Yours sincerely,}
+
+\end{letter}
+\end{document}
+%-----------------------------------------------------------------------------%
